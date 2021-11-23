@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Skills</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    
+
+     <!-- header -->
+     <section id="header">
+      <div class="container">
+              <nav class="navbar navbar-expand-lg py-2">
+                    <a class="navbar-brand fs-2 fw-bolder" href="#">Sanket</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fal fa-bars text-white fs-3"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="about.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="work.html">Work</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="contact.html">Contact me</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          </section>
+          <!-- end of header -->
+
+          <!-- skills -->
+
+          <section class="skills">
+            <div class="container">
+              <div class="row">
+                
+                <div class="col-6 mx-auto">
+
+                  <div class="skills">
+                    <!-- skill -->
+                    <div class="skill">
+                       <!-- title -->
+                       <div class="skill-title">
+                          HTML
+                       </div>
+                       <!-- bar -->
+                       <div class="skill-bar" data-bar="90"><span></span></div>
+                    </div>
+                    <!-- #skill -->
+                    <!-- skill -->
+                    <div class="skill">
+                       <!-- title -->
+                       <div class="skill-title">
+                          CSS
+                       </div>
+                       <!-- bar -->
+                       <div class="skill-bar" data-bar="70"><span></span></div>
+                    </div>
+                    <!-- #skill -->
+                    <!-- skill -->
+                    <div class="skill">
+                       <!-- title -->
+                       <div class="skill-title">
+                          Bootstrap
+                       </div>
+                       <!-- bar -->
+                       <div class="skill-bar" data-bar="60"><span class=""></span></span></div>
+                    </div>
+                    <!-- #skill -->
+                    <!-- skill -->
+                    <div class="skill">
+                       <!-- title -->
+                       <div class="skill-title">
+                          JavaScript
+                       </div>
+                       <!-- bar -->
+                       <div class="skill-bar" data-bar="80"><span></span></div>
+                    </div>
+                    <!-- #skill -->
+                    <!-- skill -->
+                    <div class="skill">
+                       <!-- title -->
+                       <div class="skill-title">
+                          JQuery
+                       </div>
+                       <!-- bar -->
+                       <div class="skill-bar" data-bar="80"><span></span></div>
+                    </div>
+                    <!-- #skill -->
+                </div>
+                <div class="col-6">
+
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202109270101/show_ads_impl_fy2019.js?bust=31062977" id="google_shimpl"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+      $(".skills").addClass("active")
+$(".skills .skill .skill-bar span").each(function() {
+  $(this).animate({
+     "width": $(this).parent().attr("data-bar") + "%"
+  }, 1000);
+  $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+});
+setTimeout(function() {
+  $(".skills .skill .skill-bar span b").animate({"opacity":"1"},1000);
+}, 2000);
+  </script>
+
+  </body>
+</html>
